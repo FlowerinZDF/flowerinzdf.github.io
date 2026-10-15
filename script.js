@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-filter]').forEach(button=>{button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));document.querySelectorAll('.paper').forEach(p=>{p.hidden=button.dataset.filter!=='All'&&p.dataset.topic!==button.dataset.filter;});});});
